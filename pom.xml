@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.games647</groupId>
+    <artifactId>craftdiff</artifactId>
+    <version>1.0</version>
+
+    <description>Summarizes the API differences between spigot versions</description>
+    <url>https://games647.github.io/Craftdiff</url>
+    <name>Craftdiff</name>
+
+    <repositories>
+        <!--Bukkit-Server-API -->
+        <repository>
+            <id>spigot-repo</id>
+            <url>http://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+
+        <repository>
+            <id>paper-repo</id>
+            <url>https://repo.destroystokyo.com/repository/maven-public/</url>
+        </repository>
+    </repositories>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>com.github.siom79.japicmp</groupId>
+                <artifactId>japicmp-maven-plugin</artifactId>
+                <version>0.10.0</version>
+                <configuration>
+                    <parameter>
+                        <htmlTitle>Spigot difference from 1.11 to 1.12</htmlTitle>
+
+                        <!-- We only need the diff not all available classes -->
+                        <onlyModified>true</onlyModified>
+
+                        <!-- Show only public accessible changes -->
+                        <accessModifier>public</accessModifier>
+
+                        <!-- Skip dependencies -->
+                        <ignoreMissingClasses>true</ignoreMissingClasses>
+
+                        <!-- We don't need those files -->
+                        <skipXmlReport>true</skipXmlReport>
+                        <skipDiffReport>true</skipDiffReport>
+                    </parameter>
+                    <oldVersion>
+                        <dependency>
+                            <groupId>org.spigotmc</groupId>
+                            <artifactId>spigot-api</artifactId>
+                            <version>1.11.2-R0.1-SNAPSHOT</version>
+                            <type>jar</type>
+                        </dependency>
+                    </oldVersion>
+                    <newVersion>
+                        <dependency>
+                            <groupId>org.spigotmc</groupId>
+                            <artifactId>spigot-api</artifactId>
+                            <version>1.12-pre2-SNAPSHOT</version>
+                            <type>jar</type>
+                        </dependency>
+                    </newVersion>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+</project>

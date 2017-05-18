@@ -1,0 +1,34 @@
+# Eclipse
+/.classpath
+/.project
+/.settings
+
+# Netbeans
+/nbproject
+nb-configuration.xml
+/bukkit/nbproject/
+
+# Maven
+/target
+
+# Vim
+.*.sw[a-p]
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# various other potential build files
+/build
+/bin
+/dist
+/manifest.mf
+*.log
+
+# Mac filesystem dust
+.DS_Store
+
+# intellij
+*.iml
+*.ipr
+*.iws
+.idea/
