@@ -11,5 +11,5 @@ Currently it makes a diff between the 1.11 and 1.12 version of the spigot versio
 
 1. Generate a html reporting using Maven with this command
 
-        mvn site:site
-2. Open the target/site/japicmp.html in your web browser
+        mvn verify
+2. Open the target/japicmp/japicmp.html in your web browser
