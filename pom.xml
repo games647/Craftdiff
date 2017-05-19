@@ -13,11 +13,16 @@
     <name>Craftdiff</name>
 
     <properties>
-        <oldVersion>1.11.1-R0.1-SNAPSHOT</oldVersion>
+        <!-- Latest sponge stable -->
+        <oldVersion>6.1.0-20170502.022019-1</oldVersion>
+        <newVersion>7.0.0-SNAPSHOT</newVersion>
+
+        <!-- Bukkit version system -->
+        <!--<oldVersion>1.11.1-R0.1-SNAPSHOT</oldVersion>-->
         <!--<oldVersion>1.12-pre2-SNAPSHOT</oldVersion>-->
 
         <!--<newVersion>1.11.1-R0.1-SNAPSHOT</newVersion>-->
-        <newVersion>1.12-pre2-SNAPSHOT</newVersion>
+        <!--<newVersion>1.12-pre2-SNAPSHOT</newVersion>-->
     </properties>
 
     <repositories>
@@ -37,6 +42,12 @@
         <repository>
             <id>sport-repo</id>
             <url>https://repo.extension.ws/content/repositories/snapshots/</url>
+        </repository>
+
+        <!-- Sponge-API -->
+        <repository>
+            <id>sponge-repo</id>
+            <url>http://repo.spongepowered.org/maven</url>
         </repository>
     </repositories>
 
@@ -64,18 +75,32 @@
                         <skipDiffReport>true</skipDiffReport>
                     </parameter>
                     <oldVersion>
+                        <!-- Spigot old -->
+                        <!--<dependency>-->
+                            <!--<groupId>org.spigotmc</groupId>-->
+                            <!--<artifactId>spigot-api</artifactId>-->
+                            <!--<version>${oldVersion}</version>-->
+                        <!--</dependency>-->
+
                         <dependency>
-                            <groupId>org.spigotmc</groupId>
-                            <artifactId>spigot-api</artifactId>
+                            <groupId>org.spongepowered</groupId>
+                            <artifactId>spongeapi</artifactId>
                             <version>${oldVersion}</version>
                         </dependency>
                     </oldVersion>
                     <newVersion>
                         <dependency>
-                            <groupId>org.spigotmc</groupId>
-                            <artifactId>spigot-api</artifactId>
+                            <groupId>org.spongepowered</groupId>
+                            <artifactId>spongeapi</artifactId>
                             <version>${newVersion}</version>
                         </dependency>
+
+                        <!-- Spigot new -->
+                        <!--<dependency>-->
+                            <!--<groupId>org.spigotmc</groupId>-->
+                            <!--<artifactId>spigot-api</artifactId>-->
+                            <!--<version>${newVersion}</version>-->
+                        <!--</dependency>-->
 
                         <!-- PaperSpigot -->
                         <!--<dependency>-->

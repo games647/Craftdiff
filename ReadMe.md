@@ -16,6 +16,8 @@ Currently it makes a diff between the 1.11 and 1.12 version of the spigot versio
 
 ## Examples
 
+[Sponge 6.1 <-> Sponge 7.0](https://games647.github.io/Craftdiff/sponge-version-diff.html)
+
 [Spigot 1.11 <-> Spigot 1.12](https://games647.github.io/Craftdiff/spigot-version-diff.html)
 
 [PaperSpigot 1.12 <-> Spigot 1.12](https://games647.github.io/Craftdiff/paper-diff.html)
