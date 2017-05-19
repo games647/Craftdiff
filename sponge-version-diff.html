@@ -1,0 +1,6207 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Spigot diff from 6.1.0-20170502.022019-1 to 7.0.0-SNAPSHOT</title>
+<style type="text/css">
+body {
+    font-family: Verdana;
+}
+.title {
+    font-weight: bold;
+}
+.new {
+    color: green;
+}
+.removed {
+    color: red;
+}
+.modified {
+    color: orange;
+}
+.unchanged {
+    color: black;
+}
+thead tr td {
+    font-weight: bold;
+}
+.toc {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #dcdcdc;
+    padding: 5px;
+    background: #ededed;
+    display: inline-block;
+}
+table {
+    border-collapse: collapse;
+}
+table tr td {
+    border: 1px solid black;
+    padding: 5px;
+}
+table thead {
+    background-color: #dee3e9;
+}
+table tbody tr td.matrix_layout {
+    background-color: #dee3e9;
+    font-weight: bold;
+}
+.class {
+    margin-bottom: 2em;
+    border: 1px solid #dcdcdc;
+    padding: 5px;
+    background: #ededed;
+    display: inline-block;
+}
+.class_compatibilityChanges {
+	margin-top: 1em;
+}
+.class_superclass {
+    margin-top: 1em;
+}
+.class_interfaces {
+    margin-top: 1em;
+}
+.class_fields {
+    margin-top: 1em;
+}
+.class_serialVersionUid {
+    margin-top: 1em;
+}
+.class_constructors {
+    margin-top: 1em;
+}
+.class_methods {
+    margin-top: 1em;
+}
+.class_annotations {
+    margin-top: 1em;
+}
+.label {
+    font-weight: bold;
+}
+.label_class_member {
+    background-color: #4d7a97;
+    display: inline-block;
+    padding: 5px;
+}
+.toc_link {
+    margin-left: 10px;
+    font-size: 0.5em;
+}
+.modifier {
+    font-style: italic;
+}
+.method_return_type {
+
+}
+ul {
+    list-style-type: none;
+    padding: 0px 0px;
+}
+.meta-information {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: #ededed;
+    display: inline-block;
+}
+.warnings {
+    margin-top: 1em;
+    font-size: 0.75em;
+}
+.explanations {
+	margin-bottom: 2em;
+}
+
+</style>
+</head>
+<body>
+<span class="title">Sponge diff from 6.1.0 to 7.0.0-SNAPSHOT</span>
+<br>
+<div class="meta-information">
+<table>
+<tr>
+<td>Access modifier filter:</td><td>PUBLIC</td>
+</tr>
+<tr>
+<td>Only modifications:</td><td>true</td>
+</tr>
+<tr>
+<td>Only binary incompatible modifications:</td><td>false</td>
+</tr>
+<tr>
+<td>Ignore missing classes:</td><td>true</td>
+</tr>
+<tr>
+<td>Includes:</td><td>all</td>
+</tr>
+<tr>
+<td>Excludes:</td><td>n.a.</td>
+</tr>
+<tr>
+<td>Semantic Versioning:</td><td>1.0.0</td>
+</tr>
+</table>
+<div class="warnings">
+<span>
+								WARNING: You are using the option '--ignore-missing-classes', i.e. superclasses and
+								interfaces that could not
+								be found on the classpath are ignored. Hence changes caused by these superclasses and
+								interfaces are not reflected in the output.
+							</span>
+</div>
+</div>
+<ul>
+<li>
+<a href="#toc">Classes</a>
+</li>
+</ul>
+    
+<div class="toc">
+<a name="toc"></a><span class="label">Classes:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Fully Qualified Name</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.CatalogTypes">org.spongepowered.api.CatalogTypes</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.DataManager">org.spongepowered.api.data.DataManager</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.key.Keys">org.spongepowered.api.data.key.Keys</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.manipulator.catalog.CatalogEntityData">org.spongepowered.api.data.manipulator.catalog.CatalogEntityData</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.manipulator.immutable.entity.ImmutableAgeableData">org.spongepowered.api.data.manipulator.immutable.entity.ImmutableAgeableData</a></td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.manipulator.immutable.entity.ImmutableElderData">org.spongepowered.api.data.manipulator.immutable.entity.ImmutableElderData</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.manipulator.immutable.entity.ImmutableHorseData">org.spongepowered.api.data.manipulator.immutable.entity.ImmutableHorseData</a></td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.manipulator.immutable.entity.ImmutableSkeletonData">org.spongepowered.api.data.manipulator.immutable.entity.ImmutableSkeletonData</a></td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.manipulator.immutable.entity.ImmutableZombieData">org.spongepowered.api.data.manipulator.immutable.entity.ImmutableZombieData</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.manipulator.mutable.entity.AgeableData">org.spongepowered.api.data.manipulator.mutable.entity.AgeableData</a></td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.manipulator.mutable.entity.ElderData">org.spongepowered.api.data.manipulator.mutable.entity.ElderData</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.manipulator.mutable.entity.HorseData">org.spongepowered.api.data.manipulator.mutable.entity.HorseData</a></td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.manipulator.mutable.entity.SkeletonData">org.spongepowered.api.data.manipulator.mutable.entity.SkeletonData</a></td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.manipulator.mutable.entity.ZombieData">org.spongepowered.api.data.manipulator.mutable.entity.ZombieData</a></td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.type.HorseVariant">org.spongepowered.api.data.type.HorseVariant</a></td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.type.HorseVariants">org.spongepowered.api.data.type.HorseVariants</a></td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.type.SkeletonType">org.spongepowered.api.data.type.SkeletonType</a></td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.type.SkeletonTypes">org.spongepowered.api.data.type.SkeletonTypes</a></td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.type.ZombieType">org.spongepowered.api.data.type.ZombieType</a></td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.data.type.ZombieTypes">org.spongepowered.api.data.type.ZombieTypes</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.entity.ai.task.builtin.creature.target.TargetAITask">org.spongepowered.api.entity.ai.task.builtin.creature.target.TargetAITask</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.entity.ai.task.builtin.creature.target.TargetAITask$Builder">org.spongepowered.api.entity.ai.task.builtin.creature.target.TargetAITask$Builder</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.entity.living.animal.Horse">org.spongepowered.api.entity.living.animal.Horse</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED</span></td><td><a href="#org.spongepowered.api.entity.living.animal.RideableHorse">org.spongepowered.api.entity.living.animal.RideableHorse</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.entity.living.monster.Guardian">org.spongepowered.api.entity.living.monster.Guardian</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.entity.living.monster.Skeleton">org.spongepowered.api.entity.living.monster.Skeleton</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.entity.living.monster.Zombie">org.spongepowered.api.entity.living.monster.Zombie</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.event.cause.entity.damage.DamageModifierTypes">org.spongepowered.api.event.cause.entity.damage.DamageModifierTypes</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.event.entity.AttackEntityEvent">org.spongepowered.api.event.entity.AttackEntityEvent</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.event.entity.DamageEntityEvent">org.spongepowered.api.event.entity.DamageEntityEvent</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.item.inventory.property.InventoryDimension">org.spongepowered.api.item.inventory.property.InventoryDimension</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.text.serializer.TextSerializers">org.spongepowered.api.text.serializer.TextSerializers</a></td>
+</tr>
+<tr>
+<td><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span></td><td><a href="#org.spongepowered.api.util.TypeTokens">org.spongepowered.api.util.TypeTokens</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="explanations">
+<span>
+				Binary incompatible changes are marked with (!) while source incompatible changes are marked with (*).
+			</span>
+</div>
+<div>
+<div>
+<div class="class" id="org.spongepowered.api.CatalogTypes">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.CatalogTypes"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						">final&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">class</span>&nbsp;
+						org.spongepowered.api.CatalogTypes</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields">
+<span class="label_class_member">Fields:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Field</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">java.lang.Class
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>DOUBLE_SIZE_PLANT_TYPE<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">java.lang.Class
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>HORSE_VARIANT<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">java.lang.Class
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>SKELETON_TYPE<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.DataManager">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.DataManager"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">interface</span>&nbsp;
+						org.spongepowered.api.data.DataManager</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						new
+					">NEW
+				(*)
+			</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.spongepowered.api.data.DataContainer</span></td><td>createContainer()
+				</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_ADDED_TO_INTERFACE</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						new
+					">NEW
+				(*)
+			</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.spongepowered.api.data.DataContainer</span></td><td>createContainer(org.spongepowered.api.data.DataView$SafetyMode)
+				</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_ADDED_TO_INTERFACE</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">void</span></td><td>register(java.lang.Class,
+					<wbr></wbr>java.lang.Class,
+					<wbr></wbr>org.spongepowered.api.data.manipulator.DataManipulatorBuilder)
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.key.Keys">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.key.Keys"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						">final&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">class</span>&nbsp;
+						org.spongepowered.api.data.key.Keys</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields">
+<span class="label_class_member">Fields:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Field</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.key.Key
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>ELDER_GUARDIAN</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.key.Key
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>HELD_EXPERIENCE<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.key.Key
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>HORSE_VARIANT<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.key.Key
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>IS_BABY<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.key.Key
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>LEASH_HOLDER<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.key.Key
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>SKELETON_TYPE<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.key.Key
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>VILLAGER_ZOMBIE_PROFESSION</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.key.Key
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>ZOMBIE_TYPE<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.manipulator.catalog.CatalogEntityData">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.manipulator.catalog.CatalogEntityData"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						">final&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">class</span>&nbsp;
+						org.spongepowered.api.data.manipulator.catalog.CatalogEntityData</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields">
+<span class="label_class_member">Fields:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Field</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">java.lang.Class
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>ELDER_DATA<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">java.lang.Class
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>SKELETON_DATA<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">java.lang.Class
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>ZOMBIE_DATA<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.manipulator.immutable.entity.ImmutableAgeableData">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.manipulator.immutable.entity.ImmutableAgeableData"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">interface</span>&nbsp;
+						org.spongepowered.api.data.manipulator.immutable.entity.ImmutableAgeableData</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.immutable.ImmutableValue</span></td><td>baby()
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.manipulator.immutable.entity.ImmutableElderData">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.manipulator.immutable.entity.ImmutableElderData"></a><span class="
+						removed
+					">REMOVED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+						removed
+					">interface</span>&nbsp;
+						org.spongepowered.api.data.manipulator.immutable.entity.ImmutableElderData</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_compatibilityChanges">
+<span class="label_class_member">Compatibility Changes:</span>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLASS_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces">
+<span class="label_class_member">Interfaces:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.DataSerializable</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.manipulator.ImmutableDataManipulator</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.value.ValueContainer</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.immutable.ImmutableValue</span></td><td>elder()
+				</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.manipulator.immutable.entity.ImmutableHorseData">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.manipulator.immutable.entity.ImmutableHorseData"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">interface</span>&nbsp;
+						org.spongepowered.api.data.manipulator.immutable.entity.ImmutableHorseData</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.immutable.ImmutableValue</span></td><td>variant()
+				</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.manipulator.immutable.entity.ImmutableSkeletonData">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.manipulator.immutable.entity.ImmutableSkeletonData"></a><span class="
+						removed
+					">REMOVED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+						removed
+					">interface</span>&nbsp;
+						org.spongepowered.api.data.manipulator.immutable.entity.ImmutableSkeletonData</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_compatibilityChanges">
+<span class="label_class_member">Compatibility Changes:</span>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLASS_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces">
+<span class="label_class_member">Interfaces:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.DataSerializable</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.manipulator.immutable.ImmutableVariantData</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.manipulator.ImmutableDataManipulator</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.value.ValueContainer</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.manipulator.immutable.entity.ImmutableZombieData">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.manipulator.immutable.entity.ImmutableZombieData"></a><span class="
+						removed
+					">REMOVED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+						removed
+					">interface</span>&nbsp;
+						org.spongepowered.api.data.manipulator.immutable.entity.ImmutableZombieData</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_compatibilityChanges">
+<span class="label_class_member">Compatibility Changes:</span>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLASS_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces">
+<span class="label_class_member">Interfaces:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.DataSerializable</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.manipulator.ImmutableDataManipulator</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.value.ValueContainer</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.immutable.ImmutableOptionalValue</span></td><td>profession()
+				</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.immutable.ImmutableValue</span></td><td>type()
+				</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.manipulator.mutable.entity.AgeableData">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.manipulator.mutable.entity.AgeableData"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">interface</span>&nbsp;
+						org.spongepowered.api.data.manipulator.mutable.entity.AgeableData</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.mutable.Value</span></td><td>baby()
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.manipulator.mutable.entity.ElderData">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.manipulator.mutable.entity.ElderData"></a><span class="
+						removed
+					">REMOVED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+						removed
+					">interface</span>&nbsp;
+						org.spongepowered.api.data.manipulator.mutable.entity.ElderData</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_compatibilityChanges">
+<span class="label_class_member">Compatibility Changes:</span>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLASS_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces">
+<span class="label_class_member">Interfaces:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.DataSerializable</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.manipulator.DataManipulator</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.value.ValueContainer</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.mutable.Value</span></td><td>elder()
+				</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.manipulator.mutable.entity.HorseData">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.manipulator.mutable.entity.HorseData"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">interface</span>&nbsp;
+						org.spongepowered.api.data.manipulator.mutable.entity.HorseData</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.mutable.Value</span></td><td>variant()
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.manipulator.mutable.entity.SkeletonData">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.manipulator.mutable.entity.SkeletonData"></a><span class="
+						removed
+					">REMOVED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+						removed
+					">interface</span>&nbsp;
+						org.spongepowered.api.data.manipulator.mutable.entity.SkeletonData</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_compatibilityChanges">
+<span class="label_class_member">Compatibility Changes:</span>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLASS_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces">
+<span class="label_class_member">Interfaces:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.DataSerializable</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.manipulator.DataManipulator</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.manipulator.mutable.VariantData</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.value.ValueContainer</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.manipulator.mutable.entity.ZombieData">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.manipulator.mutable.entity.ZombieData"></a><span class="
+						removed
+					">REMOVED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+						removed
+					">interface</span>&nbsp;
+						org.spongepowered.api.data.manipulator.mutable.entity.ZombieData</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_compatibilityChanges">
+<span class="label_class_member">Compatibility Changes:</span>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLASS_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces">
+<span class="label_class_member">Interfaces:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.DataSerializable</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.manipulator.DataManipulator</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.data.value.ValueContainer</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.mutable.OptionalValue</span></td><td>profession()
+				</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.mutable.Value</span></td><td>type()
+				</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.type.HorseVariant">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.type.HorseVariant"></a><span class="
+						removed
+					">REMOVED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+						removed
+					">interface</span>&nbsp;
+						org.spongepowered.api.data.type.HorseVariant</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_compatibilityChanges">
+<span class="label_class_member">Compatibility Changes:</span>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLASS_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces">
+<span class="label_class_member">Interfaces:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.CatalogType</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.text.translation.Translatable</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>org.spongepowered.api.util.annotation.CatalogedBy</td><td>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Name:</td><td>Old element values:</td><td>New element values:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>value</td><td>org.spongepowered.api.data.type.HorseVariants</td><td></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.type.HorseVariants">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.type.HorseVariants"></a><span class="
+						removed
+					">REMOVED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+						removed
+					">class</span>&nbsp;
+						org.spongepowered.api.data.type.HorseVariants</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_compatibilityChanges">
+<span class="label_class_member">Compatibility Changes:</span>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLASS_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields">
+<span class="label_class_member">Fields:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Field</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.type.HorseVariant
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>DONKEY</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.type.HorseVariant
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>HORSE</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.type.HorseVariant
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>LLAMA</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.type.HorseVariant
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>MULE</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.type.HorseVariant
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>SKELETON_HORSE</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.type.HorseVariant
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>UNDEAD_HORSE</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.type.SkeletonType">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.type.SkeletonType"></a><span class="
+						removed
+					">REMOVED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+						removed
+					">interface</span>&nbsp;
+						org.spongepowered.api.data.type.SkeletonType</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_compatibilityChanges">
+<span class="label_class_member">Compatibility Changes:</span>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLASS_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces">
+<span class="label_class_member">Interfaces:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.CatalogType</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>org.spongepowered.api.util.annotation.CatalogedBy</td><td>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Name:</td><td>Old element values:</td><td>New element values:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>value</td><td>org.spongepowered.api.data.type.SkeletonTypes</td><td></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.type.SkeletonTypes">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.type.SkeletonTypes"></a><span class="
+						removed
+					">REMOVED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+						removed
+					">class</span>&nbsp;
+						org.spongepowered.api.data.type.SkeletonTypes</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_compatibilityChanges">
+<span class="label_class_member">Compatibility Changes:</span>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLASS_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields">
+<span class="label_class_member">Fields:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Field</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.type.SkeletonType
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>NORMAL</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.type.SkeletonType
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>STRAY</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.type.SkeletonType
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>WITHER</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.type.ZombieType">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.type.ZombieType"></a><span class="
+						removed
+					">REMOVED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+						removed
+					">interface</span>&nbsp;
+						org.spongepowered.api.data.type.ZombieType</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_compatibilityChanges">
+<span class="label_class_member">Compatibility Changes:</span>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLASS_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces">
+<span class="label_class_member">Interfaces:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td>org.spongepowered.api.CatalogType</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INTERFACE_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>org.spongepowered.api.util.annotation.CatalogedBy</td><td>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Name:</td><td>Old element values:</td><td>New element values:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>value</td><td>org.spongepowered.api.data.type.ZombieTypes</td><td></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.data.type.ZombieTypes">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.data.type.ZombieTypes"></a><span class="
+						removed
+					">REMOVED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+						removed
+					">class</span>&nbsp;
+						org.spongepowered.api.data.type.ZombieTypes</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_compatibilityChanges">
+<span class="label_class_member">Compatibility Changes:</span>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLASS_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields">
+<span class="label_class_member">Fields:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Field</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.type.ZombieType
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>HUSK</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.type.ZombieType
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>NORMAL</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.data.type.ZombieType
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>VILLAGER</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.entity.ai.task.builtin.creature.target.TargetAITask">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.entity.ai.task.builtin.creature.target.TargetAITask"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">interface</span>&nbsp;
+						org.spongepowered.api.entity.ai.task.builtin.creature.target.TargetAITask</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">int</span></td><td>getInterruptIfTargetUnseenTicks()
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">int</span></td><td>getSearchDelay()
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">int</span></td><td>getSearchStatus()
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.entity.ai.task.builtin.creature.target.TargetAITask</span></td><td>setInterruptIfTargetUnseenTicks(int)
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.entity.ai.task.builtin.creature.target.TargetAITask</span></td><td>setSearchDelay(int)
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.entity.ai.task.builtin.creature.target.TargetAITask</span></td><td>setSearchStatus(int)
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.entity.ai.task.builtin.creature.target.TargetAITask$Builder">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.entity.ai.task.builtin.creature.target.TargetAITask$Builder"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">static&nbsp;</span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">interface</span>&nbsp;
+						org.spongepowered.api.entity.ai.task.builtin.creature.target.TargetAITask$Builder</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.entity.ai.task.builtin.creature.target.TargetAITask$Builder</span></td><td>interruptTargetUnseenTicks(int)
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">abstract&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.entity.ai.task.builtin.creature.target.TargetAITask$Builder</span></td><td>searchDelay(int)
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n.a.</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.entity.living.animal.Horse">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.entity.living.animal.Horse"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">interface</span>&nbsp;
+						org.spongepowered.api.entity.living.animal.Horse</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.mutable.Value</span></td><td>color()
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>81</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.manipulator.mutable.entity.HorseData</span></td><td>getHorseData()
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>44</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.mutable.Value</span></td><td>style()
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>69</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.mutable.Value</span></td><td>variant()
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>57</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.entity.living.animal.RideableHorse">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.entity.living.animal.RideableHorse"></a><span class="
+						modified
+					">MODIFIED</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">interface</span>&nbsp;
+						org.spongepowered.api.entity.living.animal.RideableHorse</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces">
+<span class="label_class_member">Interfaces:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						unchanged
+					">UNCHANGED
+				(!)
+			</span></td><td>org.spongepowered.api.entity.living.animal.Horse</td><td>
+			n.a.
+		</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.mutable.Value</span></td><td>variant()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>52</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.entity.living.monster.Guardian">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.entity.living.monster.Guardian"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">interface</span>&nbsp;
+						org.spongepowered.api.entity.living.monster.Guardian</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.mutable.Value</span></td><td>elder()
+				</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>56</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.manipulator.mutable.entity.ElderData</span></td><td>getElderData()
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>47</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.entity.living.monster.Skeleton">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.entity.living.monster.Skeleton"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">interface</span>&nbsp;
+						org.spongepowered.api.entity.living.monster.Skeleton</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.manipulator.mutable.entity.SkeletonData</span></td><td>getSkeletonData()
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>49</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.value.mutable.Value</span></td><td>variant()
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>61</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.entity.living.monster.Zombie">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.entity.living.monster.Zombie"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">interface</span>&nbsp;
+						org.spongepowered.api.entity.living.monster.Zombie</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields"></div>
+<div class="class_constructors"></div>
+<div class="class_methods">
+<span class="label_class_member">Methods:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed method_return_type
+					">org.spongepowered.api.data.manipulator.mutable.entity.ZombieData</span></td><td>getZombieData()
+				<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td><td>n.a.</td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METHOD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<td>Old file</td><td>New file</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.event.cause.entity.damage.DamageModifierTypes">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.event.cause.entity.damage.DamageModifierTypes"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						">final&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">class</span>&nbsp;
+						org.spongepowered.api.event.cause.entity.damage.DamageModifierTypes</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields">
+<span class="label_class_member">Fields:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Field</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.event.cause.entity.damage.DamageModifierType
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>BLOCKING<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.event.entity.AttackEntityEvent">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.event.entity.AttackEntityEvent"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">interface</span>&nbsp;
+						org.spongepowered.api.event.entity.AttackEntityEvent</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields">
+<span class="label_class_member">Fields:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Field</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">java.lang.String
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>BLOCKING<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.event.entity.DamageEntityEvent">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.event.entity.DamageEntityEvent"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">interface</span>&nbsp;
+						org.spongepowered.api.event.entity.DamageEntityEvent</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields">
+<span class="label_class_member">Fields:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Field</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">java.lang.String
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>BLOCKING<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.item.inventory.property.InventoryDimension">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.item.inventory.property.InventoryDimension"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">class</span>&nbsp;
+						org.spongepowered.api.item.inventory.property.InventoryDimension</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields">
+<span class="label_class_member">Fields:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Field</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">java.lang.String
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>PROPERTY_NAM<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.text.serializer.TextSerializers">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.text.serializer.TextSerializers"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						">final&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">class</span>&nbsp;
+						org.spongepowered.api.text.serializer.TextSerializers</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields">
+<span class="label_class_member">Fields:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Field</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">org.spongepowered.api.text.serializer.TextSerializer
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>TEXT_XML<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+</div>
+</div>
+<div>
+<div class="class" id="org.spongepowered.api.util.TypeTokens">
+<div class="class_header">
+<span class="label"><a name="org.spongepowered.api.util.TypeTokens"></a><span class="
+						modified
+					">MODIFIED
+				(!)
+			</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">class</span>&nbsp;
+						org.spongepowered.api.util.TypeTokens</span><a href="#toc" class="toc_link">top</a>
+</div>
+<div class="class_superclass"></div>
+<div class="class_interfaces"></div>
+<div class="class_fields">
+<span class="label_class_member">Fields:</span>
+<table>
+<thead>
+<tr>
+<td>Status</td><td>Modifier</td><td>Type</td><td>Field</td><td>Compatibility Changes:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">com.google.common.reflect.TypeToken
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>HORSE_VARIANT_TOKEN<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">com.google.common.reflect.TypeToken
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>HORSE_VARIANT_VALUE_TOKEN<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">com.google.common.reflect.TypeToken
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>SKELETON_TOKEN<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">com.google.common.reflect.TypeToken
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>SKELETON_VALUE_TOKEN<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">com.google.common.reflect.TypeToken
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>ZOMBIE_TYPE_TOKEN<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td><span class="
+						removed
+					">REMOVED
+				(!)
+			</span></td><td><span class="
+							removed modifier
+						">public&nbsp;</span><span class="
+							removed modifier
+						">static&nbsp;</span><span class="
+							removed modifier
+						">final&nbsp;</span><span class="
+							removed modifier
+						"></span></td><td><span class="
+						removed modifier
+					">com.google.common.reflect.TypeToken
+				(!)
+			</span></td><td>
+<table>
+<thead>
+<tr>
+<td>Change</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIELD_REMOVED</td>
+</tr>
+</tbody>
+</table>
+</td><td>ZOMBIE_TYPE_VALUE_TOKEN<div class="class_annotations">
+<span class="label_class_member">Annotations:</span>
+<table>
+<thead>
+<tr>
+<td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="
+						removed
+					">REMOVED</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="class_constructors"></div>
+<div class="class_methods"></div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
