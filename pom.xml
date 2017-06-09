@@ -18,11 +18,15 @@
         <!--<newVersion>7.0.0-SNAPSHOT</newVersion>-->
 
         <!-- Bukkit version system -->
-        <oldVersion>1.11.1-R0.1-SNAPSHOT</oldVersion>
+        <!--<oldVersion>1.11.1-R0.1-SNAPSHOT</oldVersion>-->
         <!--<oldVersion>1.12-pre2-SNAPSHOT</oldVersion>-->
 
         <!--<newVersion>1.11.1-R0.1-SNAPSHOT</newVersion>-->
-        <newVersion>1.12-R0.1-SNAPSHOT</newVersion>
+        <!--<newVersion>1.12-R0.1-SNAPSHOT</newVersion>-->
+
+        <!--BungeeCord version system-->
+        <oldVersion>1.11-SNAPSHOT</oldVersion>
+        <newVersion>1.12-SNAPSHOT</newVersion>
     </properties>
 
     <repositories>
@@ -48,6 +52,11 @@
         <repository>
             <id>sponge-repo</id>
             <url>http://repo.spongepowered.org/maven</url>
+        </repository>
+        
+        <repository>
+            <id>bungee-repo</id>
+            <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
     </repositories>
 
@@ -76,17 +85,23 @@
                     </parameter>
                     <oldVersion>
                         <!-- Spigot old -->
-                        <dependency>
-                            <groupId>org.spigotmc</groupId>
-                            <artifactId>spigot-api</artifactId>
-                            <version>${oldVersion}</version>
-                        </dependency>
+                        <!--<dependency>-->
+                            <!--<groupId>org.spigotmc</groupId>-->
+                            <!--<artifactId>spigot-api</artifactId>-->
+                            <!--<version>${oldVersion}</version>-->
+                        <!--</dependency>-->
 
                         <!--<dependency>-->
                             <!--<groupId>org.spongepowered</groupId>-->
                             <!--<artifactId>spongeapi</artifactId>-->
                             <!--<version>${oldVersion}</version>-->
                         <!--</dependency>-->
+
+                        <dependency>
+                            <groupId>net.md-5</groupId>
+                            <artifactId>bungeecord-api</artifactId>
+                            <version>${oldVersion}</version>
+                        </dependency>
                     </oldVersion>
                     <newVersion>
                         <!--<dependency>-->
@@ -96,9 +111,15 @@
                         <!--</dependency>-->
 
                         <!-- Spigot new -->
+                        <!--<dependency>-->
+                            <!--<groupId>org.spigotmc</groupId>-->
+                            <!--<artifactId>spigot-api</artifactId>-->
+                            <!--<version>${newVersion}</version>-->
+                        <!--</dependency>-->
+
                         <dependency>
-                            <groupId>org.spigotmc</groupId>
-                            <artifactId>spigot-api</artifactId>
+                            <groupId>net.md-5</groupId>
+                            <artifactId>bungeecord-api</artifactId>
                             <version>${newVersion}</version>
                         </dependency>
 
