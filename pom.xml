@@ -18,40 +18,40 @@
         <!--<newVersion>7.0.0-SNAPSHOT</newVersion>-->
 
         <!-- Bukkit version system -->
-        <!--<oldVersion>1.11.1-R0.1-SNAPSHOT</oldVersion>-->
+        <oldVersion>1.8.8-R0.1-SNAPSHOT</oldVersion>
         <!--<oldVersion>1.12-pre2-SNAPSHOT</oldVersion>-->
 
         <!--<newVersion>1.11.1-R0.1-SNAPSHOT</newVersion>-->
-        <!--<newVersion>1.12-R0.1-SNAPSHOT</newVersion>-->
+        <newVersion>1.12-R0.1-SNAPSHOT</newVersion>
 
         <!--BungeeCord version system-->
-        <oldVersion>1.11-SNAPSHOT</oldVersion>
-        <newVersion>1.12-SNAPSHOT</newVersion>
+        <!--<oldVersion>5.1.0</oldVersion>-->
+        <!--<newVersion>6.1.0-20170814.171949-4</newVersion>-->
     </properties>
 
     <repositories>
         <!--Bukkit-Server-API -->
         <repository>
             <id>spigot-repo</id>
-            <url>http://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
 
-        <!-- PaperSpigot and Glowstone (uses the same API) -->
+        <!-- Paper and Glowstone (uses the same API) -->
         <repository>
             <id>paper-repo</id>
             <url>https://repo.destroystokyo.com/repository/maven-public/</url>
         </repository>
 
         <!-- Sportbukkit -->
-        <repository>
-            <id>sport-repo</id>
-            <url>https://repo.extension.ws/content/repositories/snapshots/</url>
-        </repository>
+        <!--<repository>-->
+            <!--<id>sport-repo</id>-->
+            <!--<url>https://repo.extension.ws/content/repositories/snapshots/</url>-->
+        <!--</repository>-->
 
         <!-- Sponge-API -->
         <repository>
             <id>sponge-repo</id>
-            <url>http://repo.spongepowered.org/maven</url>
+            <url>https://repo.spongepowered.org/maven</url>
         </repository>
         
         <repository>
@@ -65,7 +65,7 @@
             <plugin>
                 <groupId>com.github.siom79.japicmp</groupId>
                 <artifactId>japicmp-maven-plugin</artifactId>
-                <version>0.10.0</version>
+                <version>0.11.1</version>
                 <configuration>
                     <parameter>
                         <htmlTitle>Spigot diff from ${oldVersion} to ${newVersion}</htmlTitle>
@@ -85,11 +85,11 @@
                     </parameter>
                     <oldVersion>
                         <!-- Spigot old -->
-                        <!--<dependency>-->
-                            <!--<groupId>org.spigotmc</groupId>-->
-                            <!--<artifactId>spigot-api</artifactId>-->
-                            <!--<version>${oldVersion}</version>-->
-                        <!--</dependency>-->
+                        <dependency>
+                            <groupId>org.spigotmc</groupId>
+                            <artifactId>spigot-api</artifactId>
+                            <version>${oldVersion}</version>
+                        </dependency>
 
                         <!--<dependency>-->
                             <!--<groupId>org.spongepowered</groupId>-->
@@ -97,11 +97,11 @@
                             <!--<version>${oldVersion}</version>-->
                         <!--</dependency>-->
 
-                        <dependency>
-                            <groupId>net.md-5</groupId>
-                            <artifactId>bungeecord-api</artifactId>
-                            <version>${oldVersion}</version>
-                        </dependency>
+                        <!--<dependency>-->
+                            <!--<groupId>net.md-5</groupId>-->
+                            <!--<artifactId>bungeecord-api</artifactId>-->
+                            <!--<version>${oldVersion}</version>-->
+                        <!--</dependency>-->
                     </oldVersion>
                     <newVersion>
                         <!--<dependency>-->
@@ -111,19 +111,19 @@
                         <!--</dependency>-->
 
                         <!-- Spigot new -->
-                        <!--<dependency>-->
-                            <!--<groupId>org.spigotmc</groupId>-->
-                            <!--<artifactId>spigot-api</artifactId>-->
-                            <!--<version>${newVersion}</version>-->
-                        <!--</dependency>-->
-
                         <dependency>
-                            <groupId>net.md-5</groupId>
-                            <artifactId>bungeecord-api</artifactId>
+                            <groupId>org.spigotmc</groupId>
+                            <artifactId>spigot-api</artifactId>
                             <version>${newVersion}</version>
                         </dependency>
 
-                        <!-- PaperSpigot -->
+                        <!--<dependency>-->
+                            <!--<groupId>net.md-5</groupId>-->
+                            <!--<artifactId>bungeecord-api</artifactId>-->
+                            <!--<version>${newVersion}</version>-->
+                        <!--</dependency>-->
+
+                        <!-- Paper -->
                         <!--<dependency>-->
                             <!--<groupId>com.destroystokyo.paper</groupId>-->
                             <!--<artifactId>paper-api</artifactId>-->
